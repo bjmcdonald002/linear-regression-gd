@@ -1,4 +1,4 @@
-# Linear Regression with Gradient Descent & 5‑Fold CV
+# 🎯 Linear Regression with Gradient Descent & 5‑Fold CV
 
 ![Status](https://img.shields.io/badge/project-complete-brightgreen)
 ![Python 3.9](https://img.shields.io/badge/python-3.9-blue)
@@ -6,14 +6,14 @@
 A hands‑on exploration of **standard linear regression** trained via gradient descent.  
 Using a small dataset containing **four numeric input features (X₁ – X₄)** and a single target variable **Y**, we:
 
-* test **15 distinct feature‑set combinations** (all non‑empty subsets of the four inputs);
-* apply **5‑fold cross‑validation** to each combination (75 total training runs);
-* employ **early stopping** to prevent over‑fitting and reduce unnecessary iterations;
-* compare validation‑fold MSE to identify the most predictive feature set.
+* 🔀 test **15 distinct feature‑set combinations** (all non‑empty subsets of the four inputs);  
+* ♻️ apply **5‑fold cross‑validation** to each combination (75 total training runs);  
+* ⏱️ employ **early stopping** to prevent over‑fitting and reduce unnecessary iterations;  
+* 🏆 compare validation‑fold MSE to identify the most predictive feature set.
 
 ---
 
-## Dataset
+## 📊 Dataset Schema
 
 | Column | Description |
 |--------|-------------|
@@ -23,10 +23,9 @@ Using a small dataset containing **four numeric input features (X₁ – X₄)
 | X₄     | Feature 4 |
 | **Y**  | Target value to predict |
 
-
 ---
 
-## Feature‑Set Matrix (15 Combinations)
+## 🧮 Feature‑Set Matrix (15 Combinations)
 
 | Size | Combinations |
 |------|--------------|
@@ -37,11 +36,11 @@ Using a small dataset containing **four numeric input features (X₁ – X₄)
 
 ---
 
-## Methodology
+## ⚙️ Methodology
 
 1. **Gradient Descent**  
    * Implemented manually in pure Python 3.9 (no high‑level ML libraries).  
-   * Learning rate and max‑epoch hyper‑parameters exposed for experimentation.  
+   * Learning‑rate and max‑epoch hyper‑parameters exposed for experimentation.  
 2. **Early Stopping**  
    * Monitors validation‑fold loss; halts when no improvement after *N* epochs.  
 3. **5‑Fold Cross‑Validation**  
@@ -52,11 +51,21 @@ Using a small dataset containing **four numeric input features (X₁ – X₄)
 
 ---
 
-## Repository Contents
+## 🔑 Data Requirements
 
-```text
-.
-├── lin_reg_gd.ipynb   # End‑to‑end notebook: data → training → results
+This notebook expects a CSV named `data1.csv` in the repository root containing the columns shown in the **Dataset Schema** above.
 
-```markdown
-> **Data:**  Download `data1.csv` from the course portal and place it in the notebook’s working directory before running.
+> **Note:** The dataset was provided by the course instructor and is **not redistributed** here.  
+> If you have legitimate access, place your copy of `data1.csv` beside the notebook before running.
+
+---
+
+## 📁 Files
+
+- `lin_reg_gd.ipynb` — Notebook that trains a gradient‑descent linear‑regression model (loads `data1.csv` locally)  
+- `README.md` — You are here
+
+---
+
+### In Summary:
+A compact, reproducible showcase of gradient‑descent linear regression with exhaustive feature‑set testing, 5‑fold CV, and early stopping—ready for reviewers to explore (once they supply the data).
