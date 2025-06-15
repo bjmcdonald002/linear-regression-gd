@@ -70,7 +70,7 @@ This notebook expects a CSV named `data1.csv` in the repository root containing 
 ### In Summary:
 A compact, reproducible showcase of gradient‑descent linear regression with exhaustive feature‑set testing, 5‑fold CV, and early stopping—ready for reviewers to explore (once they supply the data).
 
-## 👽 Author
+## Author
 
 *Prepared by Barrett James McDonald | PhD Student | University of South Florida*
 
