@@ -62,8 +62,8 @@ This notebook expects a CSV named `data1.csv` in the repository root containing 
 
 ## Files
 
-- `lin_reg_gd.ipynb` — Notebook that trains a gradient‑descent linear‑regression model (loads `data1.csv` locally)  
-- `README.md` — You are here
+- `lin_reg_gd.ipynb`: Notebook that trains a gradient‑descent linear‑regression model (loads `data1.csv` locally)  
+- `README.md`: You are here
 
 ---
 
